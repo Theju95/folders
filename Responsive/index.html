@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+
+    <style>
+
+        .container
+        {
+            display:flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+    body
+    {
+        margin:0;
+    }
+
+    .c1
+    {
+        background-color: chocolate;
+        width:100vw;
+        height: 100vw;
+        
+    }
+
+    .c2
+    {
+        background-color: cornflowerblue;
+        width:100vw;
+        height: 100vw;
+        
+    }
+
+    .c3
+    {
+        background-color: peru;
+        width:100vw;
+        height: 100vw;
+
+    }
+    @media(min-width: 800px){
+            .c1{width:50vw;}
+            .c2{width:50vw;}
+
+    }
+
+    @media(min-width: 1000px){
+            .c1{width:90vw; }
+            .c2{widows: 60vw; }
+            .c3{width:70vw;}
+
+    }
+        
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+       <section class="c1">section1 content</section>
+       <section class="c2">section2 content</section>
+       <section class="c3">section3 content</section>
+
+    </div>
+</body>
+</html>

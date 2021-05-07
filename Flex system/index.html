@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout Demo</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{margin:0;}
+header{
+background-color: navy;
+color: wheat;
+display: flex;
+justify-content: space-around;
+}
+ul li{
+    display: inline;
+    padding: 10px;
+}
+.hero-unit-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.hero-unit-section img {
+   height: 80vh;
+   width: 100vw;
+   margin: 0;
+    
+}
+
+.hero-unit-mask{
+    background-color:rebeccapurple;
+    width: 60vw;
+    height: 30vw;
+    position: absolute;
+    opacity: 0.3;
+
+    
+}
+img{width: auto;
+height: 80vh;
+margin: 0;}
+
+
+.hero-unit-caption{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin: auto;
+    font-size: 3em;
+    
+}
+
+.hero-unit-caption a{
+   text-decoration: none;
+   background-color: aqua;
+   margin: auto;
+   
+    
+}
+
+
+.paper-section{
+    display: flex;
+    justify-content: space-around;
+    margin:30px 20px;   
+}
+.paper img{
+    width: 10vw;
+    height: 20vh;
+}
+.paper{
+    border:1px solid blue;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 30px 10px cadetblue;
+}
+footer{
+    background-color: violet;
+    text-align: center;
+    height: 10vh;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Legato Healthcre</h2>
+        <ul>
+            <li>Login</li>
+            <li>Logout</li>
+        </ul>
+    </header><br>
+    <section class="hero-unit-section"> 
+        <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="My image">
+      
+            
+    <div class="hero-unit-mask"></div>
+    <div class="hero-unit-caption">
+
+            We do Digital Transformation
+            <a href="">Know More</a>
+        </div>
+    </section>
+    <section class="paper-section"> 
+        <div class="paper">
+            <img src="./img/1602840642029.jpg" alt="">
+            <h3></h3>
+        </div>
+        <div class="paper">
+            <img src="./img/1602840642029.jpg" alt="">
+            <h3></h3>
+        </div>
+        <div class="paper">
+            <img src="./img/1602840642029.jpg" alt="">
+            <h3></h3>
+        </div>
+    </section>
+    <footer>Legato Healthcare  &reg; All rights Reserved</footer>
+</body>
+</html>
